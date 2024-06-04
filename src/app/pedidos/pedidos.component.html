@@ -1,0 +1,9 @@
+<h2>Lista de Pedidos no entregados</h2>
+<ul>
+  <li *ngFor="let pedido of pedidos">
+    {{ pedido.titulo }} - {{ pedido.descripcion }}
+    <button (click)="marcarComoEntregado(pedido.id)">Marcar como Entregado</button>
+  </li>
+</ul>
+
+

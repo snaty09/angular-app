@@ -1,0 +1,13 @@
+<h2>Crear Nuevo Pedido</h2>
+<form (ngSubmit)="crearPedido()">
+  <label for="titulo">Título:</label>
+  <input id="titulo" [(ngModel)]="titulo" name="titulo" required>
+  <br>
+  <label for="descripcion">Descripción:</label>
+  <input id="descripcion" [(ngModel)]="descripcion" name="descripcion" required>
+  <br>
+  <button type="submit">Crear Pedido</button>
+</form>
+
+
+
